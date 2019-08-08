@@ -1,0 +1,123 @@
+.main {
+  text-align: center;
+  overflow-y: auto;
+  padding: 20px 3px 60px 3px;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+.ant-collapse-content > .ant-collapse-content-box {
+  padding: 5px;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  padding-left: 30px;
+}
+.ajax-param-person {
+  display: flex;
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #d9d9d9;
+  justify-content: space-between;
+}
+.upExecl {
+  visibility: none;
+}
+.panel-header-name {
+  width: 132px;
+  height: 26px;
+}
+.ajax-param {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  padding: 5px;
+}
+.settingBody {
+  position: relative;
+  transition: all .5s;
+  padding-top: 15px;
+}
+.settingBody-hidden {
+  transform: translateY(calc(-100% + 15px));
+}
+.collapse {
+  transition: all .6s;
+  margin-bottom: 10px;
+}
+.collapse-hidden {
+  transform: translateY(-100px);
+  opacity: 0;
+}
+.intercepted-requests {
+  margin-bottom: 6px;
+  margin-top: 7px;
+  text-align: left;
+  font-weight: 500;
+}
+.intercepted {
+  text-align: left;
+}
+.intercepted > span {
+  width: 100%;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.url {
+  vertical-align: top;
+}
+.panel-header {
+  text-align: left;
+}
+.wrapper-btn-add {
+  width: 100%;
+  text-align: center;
+  transition: top .2s;
+}
+.btn-add {
+  transition: transform .5s;
+  transition-delay: .1s;
+}
+.btn-add-hidden {
+  transform: rotate(-135deg);
+}
+
+
+.ant-collapse-item {
+  animation-duration: 0.5s;
+  backface-visibility: visible !important;
+  animation-name: flipInX;
+}
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
